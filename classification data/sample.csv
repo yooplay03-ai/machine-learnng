@@ -1,0 +1,11 @@
+Name,Country,Age,Salary,Purchased
+James,France,44,72000,No
+Tim,Spain,27,48000,Yes
+Sarah,Germany,30,54000,No
+Robert,Spain,38,61000,No
+Emma,Germany,40,,Yes
+Jennifer,France,35,58000,Yes
+Linda,Spain,,52000,No
+Thomas,France,48,79000,Yes
+Ben,Germany,50,83000,No
+Scarlett,France,37,67000,Yes
