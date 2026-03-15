@@ -1,6 +1,3 @@
-# machine-learnng
-머신러닝 공부한 것들 파일입니다. (데이터 시각화프로그래밍, 패턴분류프로그래밍)
-
 
 # 📊 Data Visualization & PySpark 학습 포트폴리오
 
