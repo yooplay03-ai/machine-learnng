@@ -1,0 +1,125 @@
+# 🤖 패턴분류프로그래밍 학습 포트폴리오
+
+Python과 scikit-learn을 활용한 머신러닝 분류 알고리즘 실습 노트북 모음입니다.
+
+---
+
+## 🗂️ 목차
+
+- [학습 목표](#-학습-목표)
+- [기술 스택](#-기술-스택)
+- [커리큘럼 구조](#-커리큘럼-구조)
+- [노트북 목록](#-노트북-목록)
+- [실행 방법](#-실행-방법)
+- [사용 데이터셋](#-사용-데이터셋)
+
+---
+
+## 🎯 학습 목표
+
+- NumPy / Pandas / Matplotlib 기초 다지기
+- scikit-learn을 활용한 데이터 전처리 익히기 (스케일링, 인코딩, 데이터 분할)
+- 주요 분류 알고리즘 직접 구현 및 비교 (Logistic Regression, KNN, SVM, 결정트리, 앙상블)
+- 혼동행렬, ROC Curve 등 모델 평가 방법 학습
+- 실습 과제와 시험을 통한 종합 응용 능력 점검
+
+---
+
+## 🛠️ 기술 스택
+
+| 분류 | 라이브러리 |
+|------|-----------|
+| 언어 | Python 3.11 |
+| 수치 계산 | NumPy |
+| 데이터 처리 | Pandas |
+| 시각화 | Matplotlib |
+| 머신러닝 | scikit-learn |
+| 실행 환경 | Jupyter Notebook / JupyterLab |
+
+---
+
+## 📚 커리큘럼 구조
+
+```
+📦 pattern-classification-programming
+ ├── 📂 basics/          # Python 라이브러리 기초
+ ├── 📂 models/          # 분류 알고리즘 실습
+ ├── 📂 evaluation/      # 모델 평가 및 시각화
+ └── 📂 assignments/     # 과제 & 시험
+```
+
+---
+
+## 📒 노트북 목록
+
+### Basics · 기초 라이브러리
+
+| 파일명 | 주요 내용 |
+|--------|----------|
+| `numpy` | 배열 생성, 인덱싱, 슬라이싱, reshape, 행렬 연산 |
+| `pandas` | DataFrame 생성, iloc, 결측값 처리 |
+| `matplotlib` | 기본 그래프, 플롯 설정 |
+| `sklearn_library` | LabelEncoder, OneHotEncoder, StandardScaler, MinMaxScaler, train_test_split |
+
+### Models · 분류 알고리즘
+
+| 파일명 | 주요 내용 |
+|--------|----------|
+| `Logistic_Regression` | 로지스틱 회귀, 시그모이드 함수, 확률 예측 |
+| `polynomial_regression` | 다항 회귀, PolynomialFeatures |
+| `KNN` | K-최근접 이웃, K값에 따른 성능 비교 |
+| `SVM__1_` | 선형/RBF/다항 커널 SVM 비교 |
+| `Decision_tree` | 결정트리, 깊이 설정, 시각화 |
+| `Random_forest` | 랜덤 포레스트, 특성 중요도 |
+| `Adaboost` | AdaBoost 앙상블, 약한 학습기 결합 |
+| `Gradient_Boosting` | Gradient Boosting, XGBoost 계열 개념 |
+
+### Evaluation · 모델 평가
+
+| 파일명 | 주요 내용 |
+|--------|----------|
+| `confusion_matrix_and_ROC_curve` | 혼동행렬, 정밀도/재현율, ROC Curve, AUC |
+| `visualizing_classification` | 결정 경계 시각화, 분류 결과 플롯 |
+
+### Assignments · 과제 & 시험
+
+| 파일명 | 내용 |
+|--------|------|
+| `과제_Numpy_그리드_및_산점도_시각화` | NumPy 그리드 생성, 산점도 시각화 과제 |
+| `과제_분류모델_광고클릭_예측실습` | Social Network Ads 데이터로 SVM 3종 커널 비교 |
+| `패턴분류프로그래밍_중간고사` | 중간고사 - 분류 알고리즘 종합 실습 |
+
+---
+
+## ▶️ 실행 방법
+
+### 1. 환경 준비
+
+```bash
+# 저장소 클론
+git clone https://github.com/yooplay03-ai/pattern-classification-programming.git
+cd pattern-classification-programming
+
+# 가상환경 생성 (선택)
+python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
+
+# 필수 라이브러리 설치
+pip install numpy pandas matplotlib scikit-learn jupyter
+```
+
+### 2. Jupyter 실행
+
+```bash
+jupyter notebook
+```
+
+---
+
+## 📝 사용 데이터셋
+
+| 데이터 | 설명 |
+|--------|------|
+| Social Network Ads | 나이/급여 기반 광고 클릭 여부 분류 |
+| Iris (붓꽃) | scikit-learn 내장 다중 분류 데이터셋 |
+| sample.csv | 국가/나이/급여 기반 구매 여부 분류 |
